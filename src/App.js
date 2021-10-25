@@ -3,8 +3,14 @@ import QuoteCards from './components/QuoteCards';
 import axios from 'axios';
 import './App.css';
 
+const simpson = {
+  "quote":"In theory, Communism works! In theory.",
+  "character":"Homer Simpson",
+  "image":"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FHomerSimpson.png?1497567511939",
+  "characterDirection":"Right"}
+
 function App() {
-  const [simpsonQuote, setSimpsonQuote] = React.useState("");
+  const [simpsonQuote, setSimpsonQuote] = React.useState(simpson);
   const getSimpsonQuote = () => {
     // Send the request
     axios
